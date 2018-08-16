@@ -61,9 +61,15 @@
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",
-    "test": "node scripts/test.js --env=jsdom"
+    "test": "node scripts/test.js --env=jsdom",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.10",
+    "@storybook/addon-links": "^3.4.10",
+    "@storybook/addons": "^3.4.10",
+    "@storybook/react": "^3.4.10",
     "babel-eslint": "^7.2.3",
     "eslint": "^3.19.0",
     "eslint-config-react-app": "^1.0.5",
